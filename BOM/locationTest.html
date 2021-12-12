@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="button" value="location" onclick="func_location()" />
+        <input type="button" value="change" onclick="change_url()" />
+        <script>
+            function func_location(){
+                console.log(location.toString(), location.href);
+                console.log(location.protocol);
+                console.log(location.host);
+                console.log(location.port);
+                console.log(location.pathname);
+                console.log(location.search);
+                console.log(location.hash);
+            }
+            function change_url(){
+                location.href = 'http://egoing.net';
+            }
+        </script>
+    </body>
+</html>
