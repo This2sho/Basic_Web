@@ -1,0 +1,21 @@
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li>JavaScript</li>
+</ul>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+    // var li = $(li);
+    // li.css('text-decoration', 'underline');
+    console.log($('li').length);
+    console.log($('li')[0]);
+    var li = $('li');
+    for(var i=0; i<li.length; i++){
+        console.log(li[i]);
+    }
+    // for(var i=0; i<li.length; i++){
+    //     $(li[i]).css('color', 'red');
+    // }
+    // 쿼리 로 감싸지 않으면 오류남.. 이건 DOM객체이지 jQuery객체가 아니기 때문..
+    
+</script>
